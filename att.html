@@ -1,0 +1,29 @@
+<html>
+<body>
+    <script>
+        n1 = parseFloat(prompt("Digite um número:"));
+        cont = prompt("digite qual operação você deseja realizaer [ + , - , * , / ]")
+        n2 = parseFloat(prompt("Digite outro número:"));
+        rest = 0
+        if (cont == "+"){
+            res = (n1+n2);
+        }
+        if (cont == "-"){
+            res = (n1-n2);
+        }
+        if (cont == "*"){
+            res = (n1*n2);
+        }
+        if (cont == "/"){
+            res = (n1/n2);
+            rest = (n1%n2)
+        }
+        if (rest == 0){
+            document.write(`o resultado ${n1} ${cont} ${n2} = ${res}`);
+        }
+        if (rest > 0){
+            document.write(`o resultado ${n1} ${cont} ${n2} = ${res} com resto igual a ${rest}`);
+        }
+    </script>
+</body>
+</html>
